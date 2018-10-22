@@ -24,7 +24,7 @@
 <body>
 
     <header>
-    
+
         <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
             <div class="container">
                 <a class="navbar-brand" href="index.html">
@@ -33,10 +33,37 @@
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon" style="color: white"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
+                <div class="collapse navbar-collapse text-center" id="navbarResponsive">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item active">
+                            <i class="material-icons">
+                                home
+                            </i>
                             <a class="nav-link active" href="index.html">Home
+                                <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <i class="material-icons">
+                                info
+                            </i>
+                            <a class="nav-link " href="index.html">About
+                                <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <i class="material-icons">
+                                date_range
+                            </i>
+                            <a class="nav-link " href="index.html">Programme
+                                <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <i class="material-icons">
+                                contacts
+                            </i>
+                            <a class="nav-link " href="index.html">Contact
                                 <span class="sr-only">(current)</span>
                             </a>
                         </li>
@@ -426,8 +453,8 @@
                 $('header nav').addClass('navbar-light');
                 $('header nav').addClass('black');
                 $('.logo').attr({
-                    'src': "assets/img/logo-htd-copy.png",
-                    
+                    'src': "assets/img/logo-htd.png",
+
                 });
             } else {
                 $('header nav').removeClass('navbar-light');

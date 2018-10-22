@@ -6,6 +6,9 @@
     background-color: rgba(0, 0, 0, 0);
     z-index: -999;
 }
+i{
+    color: orange;
+}
 
 /*HEADER*/
 
@@ -17,7 +20,7 @@
 
 .black li a.nav-item,
 .black li a.nav-link {
-    color: black !important;
+    color: white!important;
 }
 
 .navbar-dark {
@@ -46,7 +49,7 @@
 }
 
 .logo {
-    width: 100px;
+    width: 80px;
 }
 
 .bienvenue {
