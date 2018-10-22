@@ -7,7 +7,23 @@
     z-index: -999;
 }
 
-/*GENERAL*/
+/*HEADER*/
+
+.black {
+    background: black !important;
+    color: white;
+    transition: 1s;
+}
+
+.black li a.nav-item,
+.black li a.nav-link {
+    color: black !important;
+}
+
+.navbar-dark {
+    transition: 1s;
+}
+
 
 .space-mid {
     padding: 17.5px 0;

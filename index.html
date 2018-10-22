@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="img/favicon.ico">
-    <title>Index</title>
+    <title>HTD | Evenements</title>
     <!-- Bootstrap CSS & Fontawesome-->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
@@ -24,6 +24,7 @@
 <body>
 
     <header>
+    
         <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
             <div class="container">
                 <a class="navbar-brand" href="index.html">
@@ -44,6 +45,8 @@
                 </div>
             </div>
         </nav>
+
+
         <section id="welcome" class=" row">
             <section class="col-sm-12 header-img d-flex align-items-center justify-content-center flex-column">
                 <h1 id="" class="p-2 bienvenue text-white text-uppercase justify-content-center text-center "><strong>bienvenue chez <br />H<span style="color: orange">T</span>D-Even<span style="color: orange">T</span>s</strong></h1>
@@ -413,8 +416,30 @@
     </footer>
 
     <!-- END FOOTER -->
-
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <!-- SCRIPT -->
+    <script>
+        $(window).on('scroll', function() {
+            if ($(window).scrollTop() > 5) {
+
+                $('header nav').removeClass('navbar-dark');
+                $('header nav').addClass('navbar-light');
+                $('header nav').addClass('black');
+                $('.logo').attr({
+                    'src': "assets/img/logo-htd-copy.png",
+                    
+                });
+            } else {
+                $('header nav').removeClass('navbar-light');
+                $('header nav').removeClass('black');
+                $('header nav').addClass('navbar-dark');
+                $('.logo').attr({
+                    'src': "assets/img/logo-htd.png"
+                });
+            }
+        });
+
+    </script>
     <!-- MASONRY-->
     <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
     <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
@@ -423,7 +448,7 @@
 
 
     <!-- Jquery -->
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous">
+
     </script>
     <script src="assets/js/script.js"></script>
     <!-- Bootstrap js -->
